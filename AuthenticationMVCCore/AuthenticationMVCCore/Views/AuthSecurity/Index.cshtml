@@ -1,0 +1,15 @@
+﻿<h1>Welcome to Authorization Home Page</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2><strong>Home Page </strong></h2><br /><br />
+            Hello ! @User.Identity.Name! Role @User.FindFirst(claim=>claim.Type==System.Security.Claims.ClaimTypes.Role)?.Value
+            <a asp-action="logout" asp-controller="Account">
+                Logout
+            </a>
+            <br />
+            <br />
+            <h2>Welcome to Asp.Net Core Authentication and Authorization!!</h2>
+        </div>
+    </div>
+</div>
